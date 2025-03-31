@@ -24,5 +24,23 @@
 
 // truthy and falsy
 // ternary operator
-// shortcut and or operator
+// shortcut and or not operator
+const isActive = true;
 
+const showUser = () => console.log("user green");
+const hideUser = () => console.log("hide user");
+
+isActive ? showUser() : hideUser();
+isActive && showUser();
+
+// local storage and session storage
+function submit() {
+    const id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    name = name.toLowerCase();
+
+    const data = { id, name };
+    console.log(data);
+}
+
+// dot and bracket notation
